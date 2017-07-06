@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+  <title>登录聚合新闻</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+  <script src="../jquery-3.2.1.min.js"></script>
+  <script src="../bootstrap/js/bootstrap.min.js"></script>
+  <style>
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    .row.content {height: 450px}
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;}
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand h5" href="index.html">聚合新闻</a>
+    </div>
+  </div>
+</nav>
+
+<form class="form-horizontal" role="form" style="padding-top:5%; padding-bottom:12%" method="post" action="../server/login.php">
+    <div class="form-group">
+      <label class="col-sm-offset-2 h1 col-sm-2" for="title">登录</label>
+    </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="email">Email:</label>
+    <div class="col-sm-4">
+      <input type="email" class="form-control" id="email" name="email" placeholder="请输入您的Email">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="请输入您的密码">密码:</label>
+    <div class="col-sm-4">
+      <input type="password" class="form-control" name="password" id="password" placeholder="请输入您的密码">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-4">
+      <div class="checkbox">
+        <label><input type="checkbox"> Remember me</label>
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" class="btn btn-default">登录</button>
+      <span style="margin:3%"/>
+      <a href="./signup.html" role="button" class="btn btn-default">注册</a>
+    </div>
+  </div>
+</form>
+
+<footer class="container-fluid text-center">
+  <p>Developed by Jiang Yinjie：jiangyinjie@zju.edu.cn</p>
+</footer>
+
+</body>
+</html>

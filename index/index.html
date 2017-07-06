@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+  <title>聚合新闻-主页</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+  <script src="../jquery-3.2.1.min.js"></script>
+  <script src="../bootstrap/js/bootstrap.min.js"></script>
+  <script src="index.js"></script>
+  <style>
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    .row.content {
+      height: 450px;
+      margin-top: 50px;
+    }
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;}
+    }
+  </style>
+</head>
+<body onload="setIndex()">
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">聚合新闻</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar" >
+      <ul class="nav navbar-nav">
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> 登录</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid text-center">
+  <div class="row content">
+    <div id="news" class="col-sm-8 text-left">
+    </div>
+    <div id="recom" class="col-sm-4 text-left">
+      <h1>推荐新闻</h1>
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <p>Developed by Jiang Yinjie：jiangyinjie@zju.edu.cn</p>
+</footer>
+
+</body>
+</html>

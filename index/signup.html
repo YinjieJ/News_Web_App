@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html lang="ch">
+<head>
+  <title>注册聚合新闻</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+  <script src="../jquery-3.2.1.min.js"></script>
+  <script src="../bootstrap/js/bootstrap.min.js"></script>
+  <script src="../jquery.validate.min.js"></script>
+  <script src="./signup.js"></script>
+  <style>
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    .row.content {
+      height: 450px;
+      margin-top: 50px;
+    }
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;}
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid" >
+      <a class="navbar-brand h5" href="index.html">聚合新闻</a>
+    </div>
+  </div>
+</nav>
+
+<form class="form-horizontal" id="form" style="style="padding-top:5%; padding-bottom:5%"">
+    <div class="form-group">
+      <label class="col-sm-offset-2 h1 col-sm-2" for="title">注册</label>
+    </div>
+   <div class="form-group">
+      <label class="control-label col-sm-2" for="name">用户名:</label>
+      <div class="col-sm-4">
+        <input type="name" class="form-control" name="name" id="name" placeholder="请输入您的用户名">
+      </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="email">Email:</label>
+    <div class="col-sm-4">
+      <input type="email" class="form-control" name="email" id="email" placeholder="请输入您的Email，设置后不可修改，请谨慎填写">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="password">密码:</label>
+    <div class="col-sm-4">
+      <input type="password" class="form-control" name="password" id="password" placeholder="请输入您的密码">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="cpassword">确认密码:</label>
+    <div class="col-sm-4">
+      <input type="password" class="form-control" name="cpassword" id="cpassword" placeholder="请确认您的密码">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="gender">性别:</label>
+    <div class="col-sm-4">
+        <label class="radio-inline"><input type="radio" name="gender" value="男" checked>男</label>
+        <label class="radio-inline"><input type="radio" name="gender" value="女">女</label>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="age">年龄:</label>
+    <div class="col-sm-4">
+      <input type="age" class="form-control" name="age" id="age" placeholder="请输入您的年龄">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="job">职业:</label>
+    <div class="col-sm-4">
+      <select class="form-control" name="job" id="job">
+        <option>在校学生</option>
+        <option>企/事业员工</option>
+        <option>服务业人员</option>
+        <option>农林牧业相关</option>
+        <option>待业</option>
+        <option>其他</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <a href="./login.html" role ="button" class="btn btn-default">登录</a>
+      <span style="margin:3%"/>
+      <button class="btn btn-default" type="button" value="Submit" onclick="signup()">注册</button>
+    </div>
+  </div>
+</form>
+
+<footer class="container-fluid text-center">
+  <p>Developed by Jiang Yinjie：jiangyinjie@zju.edu.cn</p>
+</footer>
+
+</body>
+</html>
